@@ -2,11 +2,11 @@
 import { useState } from "react";
 
 const OWNERS = [
-  "Alice",
-  "Bob",
-  "Charlie",
-  "Diana",
-  "Edward",
+  "Sohel",
+  "Test1",
+  "Test2",
+  "Test3",
+  "Test4",
 ];
 
 const QUARTERS = ["Q1", "Q2", "Q3", "Q4"];
@@ -356,28 +356,3 @@ export default function Home() {
     </main>
   );
 }
-Save and Test Locally
-BASH
-# In your terminal
-npm run dev
-
-# Open browser
-http://localhost:3000
-What You Should See
-OKR Tracker ├── Table with columns: │ ├── # (number) │ ├── Objective (text input) │ ├── Key Result (text input) │ ├── Quarter (dropdown Q1-Q4) │ ├── Year (dropdown 2024-2027) │ ├── Owner (dropdown with names) │ └── Actions (delete button) │ ├── + Add Key Result button per objective └── + Add Objective button at bottom
-Update Owner Names
-JAVASCRIPT
-// At the top of the file find this:
-const OWNERS = [
-  "Sohel",
-  "Test1", 
-  "Test2",
-  "Test3",
-  "Test4",
-];
-
-// Replace with your real team names:
-const OWNERS = [
-  "John Smith",
-  "Sarah Jones",
-  // add your team here
